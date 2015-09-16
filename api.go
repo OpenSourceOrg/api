@@ -49,14 +49,13 @@ func main() {
 		panic(err)
 	}
 
-	licenseIds := licenses.GetIds()
 	licenseIdMap := licenses.GetIdMap()
 	licenseTagMap := licenses.GetTagMap()
 
 	licensesEndpoint := "/licenses/"
 	mux.HandleFunc(licensesEndpoint, func(w http.ResponseWriter, req *http.Request) {
 		if req.URL.Path == licensesEndpoint {
-			writeJSON(w, licenseIds, 200)
+			writeJSON(w, licenses, 200)
 			return
 		}
 		path := req.URL.Path[len(licensesEndpoint):]
