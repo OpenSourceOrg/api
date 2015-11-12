@@ -1,0 +1,15 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: api
+Source: https://github.com/opensourceorg/api
+
+Files: *
+Copyright: 2015 Open Source Initiative
+License: GPL-3.0
+
+Files: debian/*
+Copyright: 2015 Paul Tagliamonte <paultag@opensource.org>
+License: GPL-3.0
+Comment: Debian packaging is licensed under the same terms as upstream
+
+License: GPL-3.0
+TODO
