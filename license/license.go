@@ -41,9 +41,9 @@ type OtherName struct {
 
 //
 type Text struct {
-	ContentType string `json:"content_type"`
-	Name        string `json:"name"`
-	URL         string `json:"url"`
+	MediaType string `json:"media_type"`
+	Title     string `json:"title"`
+	URL       string `json:"url"`
 }
 
 //
@@ -54,7 +54,7 @@ type License struct {
 	Name         string       `json:"name"`
 	OtherNames   []OtherName  `json:"other_names"`
 	SupersededBy *string      `json:"superseded_by"`
-	Tags         []string     `json:"tags"`
+	Keywords     []string     `json:"keywords"`
 	Texts        []Text       `json:"text"`
 }
 
@@ -86,7 +86,7 @@ func (licenses Licenses) GetIdMap() map[string]License {
 func (licenses Licenses) GetTagMap() map[string][]License {
 	ret := map[string][]License{}
 	for _, license := range licenses {
-		for _, tag := range license.Tags {
+		for _, tag := range license.Keywords {
 			ret[tag] = append(ret[tag], license)
 		}
 	}
