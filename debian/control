@@ -1,13 +1,13 @@
-Source: api
+Source: opensource.org-api
 Section: devel
 Priority: extra
 Maintainer: Paul Tagliamonte <paultag@opensource.org>
-Build-Depends: debhelper (>= 9), dh-golang, golang-go
+Build-Depends: debhelper (>= 9), dh-golang, golang-go, dh-systemd
 Standards-Version: 3.9.6
 Homepage: https://github.com/opensourceorg/api
 XS-Go-Import-Path: github.com/opensourceorg/api
 
-Package: api
+Package: opensource.org-api
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, golang-go
 Built-Using: ${misc:Built-Using}

@@ -1,0 +1,10 @@
+[Unit]
+Description=Gorepos daemon
+
+[Service]
+Restart=always
+User=www-data
+ExecStart=/usr/bin/api /etc/api.opensource.org/licenses.json
+
+[Install]
+WantedBy=multi-user.target  

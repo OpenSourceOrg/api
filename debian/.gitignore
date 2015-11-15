@@ -1,4 +1,4 @@
-api
+opensource.org-api
 files
 *substvars
-*log
+*.log
