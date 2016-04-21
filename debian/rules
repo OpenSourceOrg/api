@@ -1,3 +1,8 @@
 #!/usr/bin/make -f
 %:
 	dh $@ --buildsystem=golang --with=golang,systemd,apache2
+
+override_dh_auto_install:
+	dh_auto_install -O--buildsystem=golang
+	mv debian/opensource.org-api/usr/bin/api \
+	  debian/opensource.org-api/usr/bin/opensource.org-api
