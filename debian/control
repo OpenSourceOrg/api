@@ -3,12 +3,12 @@ Section: devel
 Priority: extra
 Maintainer: Paul Tagliamonte <paultag@opensource.org>
 Build-Depends: debhelper (>= 9), dh-golang, golang-go, dh-systemd, apache2-dev
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Homepage: https://github.com/opensourceorg/api
 XS-Go-Import-Path: github.com/opensourceorg/api
 
 Package: opensource.org-api
-Architecture: all
+Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, golang-go
 Built-Using: ${misc:Built-Using}
 Description: Light API based on the licenses spec
