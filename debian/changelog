@@ -1,5 +1,5 @@
-opensource.org-api (0.1) jessie; urgency=medium
+opensource.org-api (0.1) osi-jessie; urgency=medium
 
   * Initial release.
 
- -- Paul Tagliamonte <paultag@debian.org>  Sun, 15 Nov 2015 11:39:22 -0500
+ -- Paul Tagliamonte <paultag@opensource.org>  Thu, 21 Apr 2016 11:17:46 -0400
