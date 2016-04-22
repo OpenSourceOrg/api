@@ -3,7 +3,7 @@ opensource.org-api (0.2) osi-jessie; urgency=medium
   * add myself as an uploader
   * rename /usr/bin/api -> /usr/bin/opensource.org-api
 
- -- Stefano Zacchiroli <zack@debian.org>  Thu, 21 Apr 2016 17:13:35 -0400
+ -- Stefano Zacchiroli <zack@opensource.org>  Thu, 21 Apr 2016 17:13:35 -0400
 
 opensource.org-api (0.1) osi-jessie; urgency=medium
 
