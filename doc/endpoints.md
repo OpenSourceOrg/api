@@ -12,13 +12,13 @@ Get a list of all licenses
 
 ### `/licenses/`
 
- - https://api.opensource.org/licenses/
+ - e.g., https://api.opensource.org/licenses/
 
 Get a list of all known licenses.
 
 ### `/licenses/<keyword>`
 
- - https://api.opensource.org/licenses/copyleft
+ - e.g., https://api.opensource.org/licenses/copyleft
 
  Find all licenses by a `keyword` (defined below).
 
@@ -27,13 +27,13 @@ Get a license
 
 ### `/license/<id>`
 
- - https://api.opensource.org/license/GPL-3.0
+ - e.g., https://api.opensource.org/license/GPL-3.0
 
 Get a license by its OSI ID
 
 ### `/license/<scheme>/<identifier>`
 
- - https://api.opensource.org/license/SPDX/Apache-2.0
+ - e.g., https://api.opensource.org/license/SPDX/Apache-2.0
 
 Get a license by an identifier (such as `SPDX/Apache-2.0` or `DEP5/Expat`)
 
