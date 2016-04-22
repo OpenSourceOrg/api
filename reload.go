@@ -16,6 +16,7 @@
 package main
 
 import (
+	"log"
 	"os"
 	"os/signal"
 	"syscall"
@@ -53,7 +54,8 @@ func Reloader(file string, target *Blobs) {
 	signal.Notify(c, syscall.SIGHUP)
 	for _ = range c {
 		if err := loadBlob(file, target); err != nil {
-			panic(err)
+			log.Printf("Error! Can not reload the JSON! - %s", err)
+			continue
 		}
 	}
 }
