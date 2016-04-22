@@ -1,8 +1,9 @@
-opensource.org-api (0.3) UNRELEASED; urgency=medium
+opensource.org-api (0.3) osi-jessie; urgency=medium
 
-  * work in progress...
+  * Add in a redirect root from / to the API endpoint
+  * Add in SIGHUP handler to reload the JSON
 
- --
+ -- Paul Tagliamonte <paultag@opensource.org>  Fri, 22 Apr 2016 14:46:11 -0400
 
 opensource.org-api (0.2) osi-jessie; urgency=medium
 
