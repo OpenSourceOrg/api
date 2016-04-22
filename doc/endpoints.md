@@ -14,10 +14,13 @@ Get a list of all licenses
 
  - https://api.opensource.org/licenses/
 
+Get a list of all known licenses.
+
 ### `/licenses/<keyword>`
 
  - https://api.opensource.org/licenses/copyleft
 
+ Find all licenses by a `keyword` (defined below).
 
 Get a license
 -------------
@@ -26,9 +29,13 @@ Get a license
 
  - https://api.opensource.org/license/GPL-3.0
 
+Get a license by its OSI ID
+
 ### `/license/<scheme>/<identifier>`
 
  - https://api.opensource.org/license/SPDX/Apache-2.0
+
+Get a license by an identifier (such as `SPDX/Apache-2.0` or `DEP5/Expat`)
 
 Schema
 ======
@@ -104,3 +111,13 @@ attribute         | description
 
 Contribute additional data
 ==========================
+
+Don't see what you need? Send a pull request! The data provided in the API is
+stored in Git, currently hosted on the
+[opensourceorg/licenses](https://github.com/opensourceorg/licenses) repo.
+Feel free to file bugs, help work on improvements, and send in pull requests!
+
+Licensing
+=========
+
+Data provided by this API is licensed CC0.
