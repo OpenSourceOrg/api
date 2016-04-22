@@ -19,8 +19,6 @@ import (
 	"encoding/json"
 	"net/http"
 	"os"
-
-	"github.com/opensourceorg/api/license"
 )
 
 //
@@ -44,22 +42,18 @@ func writeError(w http.ResponseWriter, message string, code int) error {
 
 func main() {
 	mux := http.NewServeMux()
-	licenses, err := license.LoadLicensesFiles(os.Args[1])
-	if err != nil {
-		panic(err)
-	}
+	blob := Blobs{}
 
-	licenseIdMap := licenses.GetIdMap()
-	licenseTagMap := licenses.GetTagMap()
+	go Reloader(os.Args[1], &blob)
 
 	licensesEndpoint := "/licenses/"
 	mux.HandleFunc(licensesEndpoint, func(w http.ResponseWriter, req *http.Request) {
 		if req.URL.Path == licensesEndpoint {
-			writeJSON(w, licenses, 200)
+			writeJSON(w, blob.Licenses, 200)
 			return
 		}
 		path := req.URL.Path[len(licensesEndpoint):]
-		if licenses, ok := licenseTagMap[path]; ok {
+		if licenses, ok := blob.LicenseTagMap[path]; ok {
 			writeJSON(w, licenses, 200)
 			return
 		}
@@ -69,7 +63,7 @@ func main() {
 	licenseEndpoint := "/license/"
 	mux.HandleFunc(licenseEndpoint, func(w http.ResponseWriter, req *http.Request) {
 		path := req.URL.Path[len(licenseEndpoint):]
-		if license, ok := licenseIdMap[path]; ok {
+		if license, ok := blob.LicenseIdMap[path]; ok {
 			writeJSON(w, license, 200)
 			return
 		}
