@@ -60,17 +60,17 @@ Keywords
 
 keyword           | description
 ------------------|------------
-`osi-approved`    | This license has been OSI Approved
-`redundant`       |
+`osi-approved`    | This license has been OSI Approved.
+`redundant`       | This license is redundant with a more widely used license.
 `permissive`      |
-`copyleft`        |
-`obsolete`        |
+`copyleft`        | This license requires derived works remain Open Source.
+`obsolete`        | This license is considered obsolete by its authors.
 `miscellaneous`   |
-`popular`         |
-`discouraged`     |
-`non-reusable`    |
-`special-purpose` |
-`retired`         |
+`popular`         | This license is widely used.
+`discouraged`     | This license's use is actively discouraged.
+`non-reusable`    | This license isn't generally usable outside of the authoring organization.
+`special-purpose` | This license suits a very special purpose.
+`retired`         | This license has been retired.
 
 
 Identifier
