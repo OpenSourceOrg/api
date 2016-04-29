@@ -10,6 +10,10 @@ Files: license/*
 Copyright: 2015-2016 Open Source Initiative
 License: Expat
 
+Files: client/*
+Copyright: 2015-2016 Open Source Initiative
+License: Expat
+
 Files: debian/*
 Copyright: 2015 Paul Tagliamonte <paultag@opensource.org>
 License: AGPL-3.0

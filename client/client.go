@@ -25,6 +25,7 @@ import (
 
 	"encoding/json"
 	"net/http"
+	"strings"
 )
 
 var baseURL = "https://api.opensource.org"
@@ -34,12 +35,36 @@ func createURIString(resource string) string {
 	return baseURL + "/" + resource
 }
 
+type BadRequest struct {
+	errors []map[string]string
+}
+
+func (b BadRequest) messages() []string {
+	ret := []string{}
+	for _, err := range b.errors {
+		ret = append(ret, err["message"])
+	}
+	return ret
+}
+
+func (b BadRequest) Error() string {
+	return strings.Join(b.messages(), ", ")
+}
+
 func request(uri string, target interface{}) error {
 	resp, err := http.Get(createURIString(uri))
 	if err != nil {
 		return err
 	}
 	defer resp.Body.Close()
+
+	if resp.StatusCode/100 != 2 {
+		errors := map[string][]map[string]string{}
+		if err := json.NewDecoder(resp.Body).Decode(&errors); err != nil {
+			return err
+		}
+		return BadRequest{errors: errors["errors"]}
+	}
 
 	if err := json.NewDecoder(resp.Body).Decode(target); err != nil {
 		return err
@@ -48,11 +73,14 @@ func request(uri string, target interface{}) error {
 	return nil
 }
 
+// Return a list of all known Licenses.
 func All() (license.Licenses, error) {
 	ret := license.Licenses{}
 	return ret, request("licenses/", &ret)
 }
 
+// Return a list of all licenses which contain the keyword that was
+// passed in.
 func Tagged(keyword string) (license.Licenses, error) {
 	ret := license.Licenses{}
 	return ret, request("licenses/"+keyword, &ret)
