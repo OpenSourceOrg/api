@@ -114,7 +114,7 @@ API Wrappers
 
   - [python-opensource](https://github.com/opensourceorg/python-opensource) ([@paultag](http://github.com/paultag))
   - [ruby-opensourceapi](https://github.com/opensourceorg/ruby-opensourceapi) ([@paultag](http://github.com/paultag))
-  - [haskell-opensource](https://github.com/OpenSourceOrg/haskell-opensource)
+  - [haskell-opensource](https://github.com/OpenSourceOrg/haskell-opensource) ([@clinty](http://github.com/clinty))
   - [github.com/opensourceorg/api/client](https://github.com/OpenSourceOrg/api/tree/master/client) ([@paultag](http://github.com/paultag))
 
 Contribute additional data
