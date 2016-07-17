@@ -117,7 +117,7 @@ API Wrappers
   - [haskell-opensource](https://github.com/OpenSourceOrg/haskell-opensource) ([@clinty](http://github.com/clinty))
   - [github.com/opensourceorg/api/client](https://github.com/OpenSourceOrg/api/tree/master/client) ([@paultag](http://github.com/paultag))
   - [rust-opensource](https://github.com/opensourceorg/rust-opensource) ([@eriol](https://github.com/eriol))
-  - [ocaml-opensource](https://github.com/mehdid/ocaml-opensource) ([@mehdid](https://github.com/mehdid))
+  - [ocaml-opensource](https://github.com/opensourceorg/ocaml-opensource) ([@mehdid](https://github.com/mehdid))
 
 Contribute additional data
 ==========================
