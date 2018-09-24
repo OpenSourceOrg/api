@@ -1,3 +1,5 @@
+<img src="https://opensource.org/files/OSI_Approved_License.png" width="100" align="right">
+
 api
 ===
 
