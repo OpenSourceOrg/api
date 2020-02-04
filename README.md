@@ -1,4 +1,4 @@
-<img src="https://opensource.org/files/OSI_Approved_License.png" width="100" align="right">
+<img align="right" width="150" height="200" src="https://opensource.org/files/OSIApproved.png">
 
 api
 ===
