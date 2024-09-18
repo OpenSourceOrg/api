@@ -1,4 +1,4 @@
-<a href="https://opensource.org/licenses"><img align="right" width="150" height="200" src="https://opensource.org/files/OSIApproved.png"></a>
+<a href="https://opensource.org/licenses"><img align="right" width="150" height="200" src="https://149753425.v2.pressablecdn.com/wp-content/uploads/2009/06/OSIApproved_100X125.png"></a>
 api
 ===
 
