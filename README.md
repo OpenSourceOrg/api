@@ -17,4 +17,4 @@ Hosted by
 --------
 
 <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201">
-This project is hosted by [DigitalOcean]([url](https://www.digitalocean.com/?utm_medium=opensource&utm_source=opensourceorg))
+This project is hosted by [DigitalOcean](https://www.digitalocean.com/?utm_medium=opensource&utm_source=opensourceorg)
