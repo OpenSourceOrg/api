@@ -1,3 +1,5 @@
+## This API is now deprecated in favour of [a replacement that uses the license metadata from the OSI web site](https://opensource.org/blog/introducing-the-new-api-for-osi-approved-licenses) 
+
 <a href="https://opensource.org/licenses"><img align="right" height="100" src="https://149753425.v2.pressablecdn.com/wp-content/uploads/2009/06/OSIApproved_100X125.png"></a>
 api
 ===
